@@ -308,7 +308,8 @@ label.check.active{background-image: url(/images/sub/check_on.png);}
 .program-list li:first-child{padding-left: 0;}
 .program-content{font-size: 20px; line-height: 160%; padding-bottom: 40px;}
 .app-map{padding: 50px; border: 1px solid #ccc; position: relative; min-height: 600px; box-sizing: border-box;}
-.app-map .modal-map{position: absolute; right: 10px; bottom: 10px;}
+.app-map .modal-map{ position: absolute; right: 10px; bottom: 10px;}
+.app-map .modal-map h4{display: none;}
 .app-map strong{display: block; font-family: 'AudiType'; padding-bottom: 20px; border-bottom: 1px solid #BB0A30;}
 .app-map > ul{display: flex;}
 .app-map > ul > li:last-child strong{padding-right: 90px;}
