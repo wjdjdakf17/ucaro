@@ -59,10 +59,10 @@ caption, .soundOnly{display:block !important;position:absolute !important;top:-9
 .align-left{text-align:left !important;}
 .align-right{text-align:right !important;}
 .align-center{text-align:center !important;}
-span.onlyDesktop{display:inline;}
 .only-pc{display:block;}
 .only-tablet{display:none;}
 .only-mobile{display:none;}
+.blind{position: absolute; left: -9999px;}
 
 
 /* 마진 */
@@ -85,7 +85,7 @@ span.onlyDesktop{display:inline;}
 input[type='text'],input[type='password'],input[type='number'],select{height:32px;max-width:100%;padding:0 5px;border:1px #ddd solid;box-sizing:border-box;}
 input::placeholder{font-family: 'Noto Sans KR';}
 select.useStyle{padding-right:20px;background:#fff url(/images/injeinc/bg_selectBox.png) no-repeat right center;-webkit-appearance:none;}
-textarea{font-family: 'Noto Sans KR'; padding:5px;border:1px #ccc solid;box-sizing:border-box;resize:vertical;}
+textarea{font-family: 'Noto Sans KR'; padding:5px;border:1px #ccc solid;box-sizing:border-box;resize:vertical; resize: none;}
 *:disabled{color:#777 !important;background:#eee !important;}
 input[type='checkbox'],input[type='radio']{margin-right:5px;}
 .inputBtn{display:inline-block;position:relative;margin-right:5px;padding-right:53px;box-sizing:border-box;vertical-align:middle;}

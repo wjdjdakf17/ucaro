@@ -32,7 +32,13 @@ $(function(){
 		scrollOn();
 	})
 
-	
+	$(".check-info img, .check-info strong").click(function(){
+		$(this).parent('li').addClass('active')
+	})
+	$(".check-close").click(function(){
+		$(this).parent().parent().removeClass('active')
+		console.log('this1',this)
+	})
 
 	$(".view-sel a").click(function(e){
 		e.preventDefault();

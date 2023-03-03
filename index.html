@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/mobile.css">
-  <script src="js/jquery.min .js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/jquery.plugin.js"></script>
   <script src="js/swiper-8.4.2.min.js"></script>
@@ -30,9 +30,9 @@
         </ul>
         <a href="#" class="only-tablet menu-open">모바일 메뉴 열기</a>
         <div class="mobile-nav">
-          <h1 class="logo-m">
+          <h2 class="logo-m">
             <a href="#"><img src="images/sub/sub_logo.png" alt="로고"></a>
-          </h1>
+          </h2>
           <a href="" class="menu-close">모바일 메뉴 닫기</a> 
           <ul>
             <li><a href="#">차량 구매</a></li>
@@ -55,6 +55,7 @@
     </div>
   </header>
   <section id="sec-1">
+    <h2 class="blind">메인비쥬얼</h2>
     <div class="swiper main">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -86,30 +87,31 @@
     </div>
   </section>
   <section id="sec-2">
+    <h2 class="blind">차량검색</h2>
     <div class="inner search-open">
       <button class="car-search-open only-tablet">차량검색</button>
-      <form action="" class="info-search-box">
+      <form action="url" class="info-search-box">
         <div class="only-tablet">
           <h2>차량검색</h2>
           <a href= "" class="car-search-close">닫기</a>
         </div>
-        <select name="" id="item1">
+        <select name="item1" id="item1">
           <option value="a1">브랜드</option>
           <option value="a2">a2</option>
         </select>
-        <select name="" id="item2">
+        <select name="item2" id="item2">
           <option value="a1">모델</option>
           <option value="a2">a2</option>
         </select>
-        <select name="" id="item3">
+        <select name="item3" id="item3">
           <option value="a1">연식</option>
           <option value="a2">a2</option>
         </select>
-        <select name="" id="item4">
+        <select name="item4" id="item4">
           <option value="a1">주행거리</option>
           <option value="a2">a2</option>
         </select>
-        <select name="" id="item5">
+        <select name="item5" id="item5">
           <option value="a1">가격</option>
           <option value="a2">a2</option>
         </select>
@@ -118,6 +120,7 @@
     </div>
   </section>
   <section id="sec-3">
+    <h2 class="blind">차량슬라이드</h2>
     <div class="inner">
       <h2>유카로 추천매물</h2>
     </div>
@@ -137,6 +140,7 @@
             </div>
             <strong class="price">23,700<span>만원</span></strong>
           </a>
+          <img class="car-status" src="/images/main/badge_blue.png" alt="차량상태">
         </div>
         <div class="swiper-slide">
           <a href="">
@@ -152,6 +156,7 @@
             </div>
             <strong class="price">23,700<span>만원</span></strong>
           </a>
+          <img class="car-status" src="/images/main/badge_normal.png" alt="차량상태">
         </div>
         <div class="swiper-slide">
           <a href="">
@@ -167,6 +172,7 @@
             </div>
             <strong class="price">23,700<span>만원</span></strong>
           </a>
+          <img class="car-status" src="/images/main/badge_normal.png" alt="차량상태">
         </div>
         <div class="swiper-slide">
           <a href="">
@@ -182,6 +188,7 @@
             </div>
             <strong class="price">23,700<span>만원</span></strong>
           </a>
+          <img class="car-status" src="/images/main/badge_normal.png" alt="차량상태">
         </div>
       </div>
       <div class="swiper-button-prev"></div>
@@ -240,6 +247,7 @@
     </div>
   </section>
   <section id="sec-4">
+    <h2 class="blind">전시장 및 딜러안내</h2>
     <div class="top">
       <div class="inner">
         <h2>AAP 전시장</h2>
@@ -268,7 +276,7 @@
                 </div>
               </div>
               <div class="bottom">
-                <h2>Today’s Advisor</h2>
+                <h3>Today’s Advisor</h3>
                 <div class="swiper advisor">
                   <div class="swiper-wrapper">
                     <!-- Slides -->

@@ -7,7 +7,7 @@
   #sub-content .menu-open{background-image: url(/images/sub/s_m_open.png);}
 
   footer .quick-consulting{display: none;}
-  header{width: 100%; transform: inherit; left: auto; z-index: 9;}
+  header{width: 100%; transform: inherit; left: auto; z-index: 8;}
   header nav > ul{display: none;}
   .mobile-nav{display: none; padding: 100px 20px 20px 20px; box-sizing: border-box;}
   .mobile-nav .logo-m{position: absolute; left: 20px ; top:30px;}
@@ -27,9 +27,9 @@
   #sec-2{margin-bottom: 0;}
   section#sec-2 > .inner{padding: 0;}
 
-  .search-open{margin-top: 0;}
+  .search-open{margin-top: 0; z-index: inherit;}
   .search-open form{display: none;}
-  .search-open form.active{display: flex; height: 100%; justify-content: flex-start; padding:20px; flex-direction: column; position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: #fff;}
+  .search-open form.active{display: flex; height: 100%; justify-content: flex-start; padding:20px; flex-direction: column; z-index: 9; position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: #fff;}
   .search-open form > div{display: flex;}
   .search-open select{width: 100% !important; color: #514B4B; border: 1px solid #ccc; margin-bottom: 10px;}
   .search-open button{width: 100%;}
@@ -37,12 +37,18 @@
   .search-open button.car-search-open:after{content: ''; position: absolute; right: 30px; top: 50%; transform: translateY(-50%); background: url(/images/main/car-link.png); width: 8px; height: 14px;}
   .car-search-close{position: absolute; right: 20px; top: 35px; background: url(/images/main/m_close.png)no-repeat  center; text-indent: -9999px; width: 16px; height: 16px;}
 
+  /* sub slide */
+  #container .info-search-box{display: none;}
+  #container .info-search-box.active{display: flex; justify-content: inherit;}
+  #container .info-search-box button{width: 100%;}
+
   #sec-3 .swiper{width: auto; padding-left: 20px;}
-  #sec-3 .swiper-slide-active img{transform: scale(1.5);}
-  #sec-3 .swiper-button-prev{right: 70px; transform: inherit;}
+  #sec-3 .swiper-slide-active a img{transform: scale(1.5);}
+  #sec-3 .swiper-button-prev{right: 70px; transform: inherit; z-index: inherit;}
   #container #sec-3 .swiper-button-prev{top: 25px; right: 70px; transform: inherit;}
-  #sec-3 .swiper-button-next{right: 30px; transform: inherit;}
+  #sec-3 .swiper-button-next{right: 30px; transform: inherit; z-index: inherit;}
   #container #sec-3 .swiper-button-next{top: 25px; right: 30px; transform: inherit;}
+  #sec-3 .swiper-slide-active a:hover img{transform: inherit;}
 
 
   #sec-4 .showroom-wrap .top img{width: 50%;}
@@ -74,6 +80,9 @@
   .gallery-top .swiper-button-next,
   .gallery-top .swiper-button-prev{top: calc(45%); background-color: #514B4B; width: 50px; height: 50px; background-size: 15px auto;}
   .app-map .modal-map h4{display: block;}
+
+  .select-detail form ul li{width: auto;}
+  .select-detail form ul li label.check{padding: 0 20px;}
 }
 
 @media all and (max-width:960px){
@@ -100,6 +109,7 @@
 
 @media all and (max-width:761px){
   h2{color:#000; font-size: 22px; padding-bottom: 15px;}
+  h3{font-size: 18px;}
   #sec-3 .swiper-slide{padding: 20px;}
   #sec-3 .swiper-slide-active{width: 85% !important; padding: 20px;}
   #sec-4 .showroom-wrap .top{flex-direction: column; align-items: baseline;}
@@ -107,7 +117,7 @@
   #sec-4 > .bottom{padding: 0 0 30px 0;}
   #sec-4 .tab-bar{position: static; top: 0; padding-top: 20px; margin-bottom: 20px; border-top: 1px solid #ccc; background: #fff;}
   #sec-4 .tab-bar li{width: 50%;}
-  #sec-4 .showroom-wrap .top .showroom-info a{box-sizing: border-box; width: 100%; border-radius: 0; background-position: left 20px center ; padding: 14px 20px; margin-top: 20px;}
+  #sec-4 .showroom-wrap .top .showroom-info a{box-sizing: border-box; width: 100%; border-radius: 0; background-position: left 20px center ; padding: 10px 15px; font-size: 17px; margin-top: 15px;}
   
   .modal-wrap.scroll{width: 95%;}
   .modal-wrap.active{top: 30px;}
@@ -150,10 +160,14 @@
   .top-title .name span{font-size: 14px;}
   
   .news-info .news-content{margin-top: 20px; font-size: 14px;}
-  .news-list li{flex-direction: column; align-items: flex-start;}
+  .news-list li{padding: 0; flex-direction: column; align-items: flex-start; border: none;}
+  .news-list li img{width: 100%;}
+  .news-list li div{padding: 20px; border: 1px solid #ccc; width: 100%; box-sizing: border-box;}
   .news-list li div a{width: auto; height: auto; line-height: inherit; font-size: 16px; padding: 10px 20px;}
   .news-list li div strong{font-size: 18px; padding-bottom: 6px;}
   .news-list li div span{font-size: 15px; padding-bottom: 15px;}
+
+  .car-search-close{top: 30px;}
 }
 
 @media all and (max-width:640px){
@@ -167,17 +181,16 @@
   #sec-1 .center-text strong{font-size: 20px;}
   #sec-1 .center-text p{font-size: 14px;}
   #sec-1 .swiper-pagination{bottom: 10px !important;}
-  /* #sec-3 .swiper-slide{width: 85% !important;} */
   #sec-3{padding-bottom: 20px;}
-  #sec-3 .swiper-slide img{transform: inherit; position: static; width: 100%; padding-top: 40px; max-width: inherit;}
-  #sec-3 .swiper-slide:after{right: auto; left: 30px; width: 50px; background-size: 100%;}
-  #sec-3 .swiper-slide .name{font-size: 36px;}
-  #sec-3 .swiper-slide .sub-name{padding-bottom: 20px;}
-  #sec-3 .swiper-slide .detail-info span{display: inline-block; padding-right: 5px;}
+  #sec-3 .swiper-slide a img{transform: inherit; position: static; width: 100%; padding-top: 40px; max-width: inherit;}
+  #sec-3 .swiper-slide:after{right: auto; left: 20px; width: 50px; background-size: 100%;}
+  #sec-3 .swiper-slide .name{font-size: 30px;}
+  #sec-3 .swiper-slide .sub-name{padding: 10px 0;}
+  #sec-3 .swiper-slide .detail-info span{display: inline-block; padding-right: 5px; font-size: 14px;}
   #sec-3 .swiper-slide .detail-info span:after{content: '/'; padding-left: 10px;}
   #sec-3 .swiper-slide .price{display: block; text-align: right; padding-top: 15px; font-size: 20px;}
   #sec-3 .sec-3-info{padding-top: 20px;}
-  #sec-3 .sec-3-info img{width: 160px; height: auto; padding-right: 20px;}
+  #sec-3 .sec-3-info img{width: 160px; height: auto; padding-right: 20px;}  
   #sec-3 .sec-3-info .name{font-size: 14px;}
   #sec-3 .sec-3-info .year,
   #sec-3 .sec-3-info .info-wrap > li div.right{font-size: 14px; padding-top: 10px;}
@@ -193,6 +206,7 @@
   #sec-4 .advisor .swiper-slide{padding: 15px;}
   #sec-4 .advisor .swiper-button-prev,
   #sec-4 .advisor .swiper-button-next{top: 50px;}
+  .car-status{right: auto; left: 20px; top: 20px; width: 50px;}
 
   h4{font-size: 18px; padding-bottom: 20px;}
   h4.has-sub{flex-direction: column; align-items: flex-start;}
@@ -202,6 +216,8 @@
   .swiper-button-next,
   .swiper-button-prev{background-size: 24px !important;}
 
+  .gallery-top .swiper-button-next{right: 0;}
+  .gallery-top .swiper-button-prev{left: 0;}
   .gallery-top .swiper-button-next,
   .gallery-top .swiper-button-prev{width: 30px; height:30px; background-size: 7px !important;}
   
@@ -214,14 +230,16 @@
   .list-con.dot > li:before{top: 10px;}
   
 
-  .location{height:170px; background-size:auto 100% !important}
+  .location{height:170px; background-size:auto 100% !important; margin-bottom: 30px;}
   .location .title{font-size: 24px;}
   .sub-nav{margin-bottom: 20px;}
   .sub-nav ul{height: 60px;}
-  .sub-tab{margin: 20px 0 30px 0}
-  .sub-tab li a{height:50px; line-height: 50px; font-size: 16px;}
-  .sub-tab-type2{padding-bottom: 20px;}
-  .sub-tab-type2 li a{padding: 10px 15px; font-size: 17px;}
+  .sub-tab{margin: 20px 0 30px 0; border:1px solid #ccc; border-radius: 30px;}
+  .sub-tab li{width: 50%;}
+  .sub-tab li a{display: block; height:50px; line-height: 50px; font-size: 16px; border:none; margin: 4px; border-radius: 30px;}
+  .sub-tab-type2{padding-bottom: 0;}
+  .sub-tab-type2 li{width: 50%; text-align: center;}
+  .sub-tab-type2 li a{display: block; margin-right: 0; padding: 10px 15px; font-size: 17px;}
   .root_daum_roughmap{height: 300px !important;}
 
   .dealer-wrap > li > div{padding: 20px;}
@@ -254,17 +272,20 @@
   .selc span.price{display: none;}
   .selc select{height: 45px; padding: 10px 0 10px 10px; background-size: 8px auto; background-position: right 5px center; font-size: 14px;}
   .car-select-wrap{padding-top: 20px;}
-  .select-detail form ul li{flex:1 0 calc(25% - 10px); width: auto; padding: 0 3px; margin-bottom: 5px;}
+  .select-detail form ul li{flex:1 0 calc(33%); width: auto; padding: 0 3px; margin-bottom: 5px;}
   .select-detail form ul li label.check{display: flex; justify-content: center; align-items: center; height: 100%; line-height:inherit; font-size: 16px; padding: 10px 0;}
   .car-select-wrap > div{margin-bottom: 20px;}
 
   .news-wrap .tab-bar{margin-bottom: 20px;}
+  .news-wrap .tab-bar li{width: 50%;}
   .news-wrap .tab-bar li a{padding: 10px 20px; font-size: 17px;}
   .news-list li img{width: 100%; padding: 0 0 10px 0;}
 
   .consulting{padding: 20px 20px 10px 20px;}
   .purcharse .detail-info{padding: 20px;}
-  .purcharse .middle ul li{width: 100%; margin-right: 0; background-size: 100px auto; background-position: left 20px center !important; height: auto; padding-left: 150px;}
+  .purcharse .middle ul li{width: 100%; margin-right: 0; height: auto; flex-direction: inherit; padding:30px; box-sizing: border-box; justify-content: space-between;}
+  .purcharse .middle ul li.active div{width: 100%;}
+  .purcharse .middle ul li img{width: 100px; padding-bottom: 0;}
   .purcharse .middle ul li > strong{font-size: 16px;}
   .purcharse .detail-info .d-top{flex-wrap: wrap; padding-bottom: 20px;}
   .purcharse .detail-info .d-top li{width: 50%; background-position: left center !important; padding: 20px 0 20px 65px; background-size: 50px !important; box-sizing: border-box; text-align: left;}
@@ -274,10 +295,16 @@
   
   .top-title p.price{font-size: 24px;}
   
+  .not-tab-list ul li a{font-size: 16px;}
 
+  .search-open select{height: 55px; font-size: 16px; padding-left: 10px;}
+  .search-open button{height: 55px; line-height: 55px; font-size: 18px;}
 }
 @media all and (max-width:440px){
   .inner{padding: 0 10px;}
+  .mobile-nav{padding:100px 10px 10px 10px}
+  .mobile-nav .logo-m{left: 10px; top: 20px;}
+  #sec-3 .swiper{padding-left: 10px;}
   .sub-nav li a{font-size: 16px;}
   .sub-nav li::after{display: none;}
   .dealer-wrap li .ad-top{flex-direction: column;}
