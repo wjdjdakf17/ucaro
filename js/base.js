@@ -18,7 +18,8 @@ $(function(){
 		scrollOff();
 	});
 
-	$(".car-search-close").click(()=>{
+	$(".car-search-close").click((e)=>{
+		e.preventDefault();
 		$(".info-search-box").removeClass('active')
 		scrollOn();
 	})
@@ -32,12 +33,11 @@ $(function(){
 		scrollOn();
 	})
 
-	$(".check-info img, .check-info strong").click(function(){
-		$(this).parent('li').addClass('active')
+	$(".check-top img, .check-top strong").click(function(){
+		$(this).parent().parent('li').addClass('active')
 	})
 	$(".check-close").click(function(){
-		$(this).parent().parent().removeClass('active')
-		console.log('this1',this)
+		$(this).parent().parent().parent().removeClass('active')
 	})
 
 	$(".view-sel a").click(function(e){
@@ -52,6 +52,12 @@ $(function(){
 
 	$(".check").click(function(){
 		$(this).toggleClass('active')
+	})
+	$(".radio").click(function(){
+		$(this).parent('div').siblings('div').children('.radio').removeClass('active');
+		if(!$(this).hasClass('active')){
+			$(this).addClass('active')
+		}
 	})
 
 	function scrollOff(){
@@ -73,7 +79,7 @@ $(function(){
 
 	const sec3 = new Swiper('.swiper.sec-3', {
 		loop: true,
-		spaceBetween: 30,
+		spaceBetween: 15,
 		// centeredSlides: true, 
 		pagination: {
 			el: '.sec3 .swiper-pagination',
@@ -89,7 +95,7 @@ $(function(){
 			},
 			640:{
 				slidesPerView: 2.5,
-				spaceBetween: 10,
+				spaceBetween: 20,
 			},
 			320:{
 				slidesPerView: 1.2,
@@ -116,8 +122,8 @@ $(function(){
 
 	const photo = new Swiper('.swiper.photo', {
 		loop: true,
-		spaceBetween: 5,
-		slidesPerView:2,
+		spaceBetween: 10,
+		slidesPerView:1.5,
 		navigation: {
 			nextEl: '.photo .swiper-button-next',
 			prevEl: '.photo .swiper-button-prev',
@@ -160,7 +166,13 @@ $(function(){
 	$(window).resize(function(){
 		let windowWidth = $(window).width(); 
 		if(windowWidth < 961){
-			$("#container .info-wrap").removeClass('active')
+			$(".info-wrap").addClass('active')
+		}else{
+			$(".info-wrap").removeClass('active')
+		}
+		if(windowWidth > 1280){
+			$(".mobile-nav").fadeOut(100);
+			scrollOn();
 		}
 	})
 
@@ -176,25 +188,22 @@ var injeinc = {
 		injeinc.modal(); 
 	},
 	'tab':function(){
-		// 반복문
 		$(".tab-content").each(function(){
 			var tabBar = $(this).children(".tab-bar");
 			var tabPage = $(this).children(".tab-page");
-			// not-used조건
 			if(!$(this).hasClass("not-used")){
 				if(tabBar.children("li.active").length == 0 && !tabBar.children("li").eq(0).children("a").hasClass("use-link")){
 					injeinc.tabReset($(this));
 					tabBar.children("li").eq(0).addClass("active");
 					tabPage.eq(0).addClass("active");
 				}
-				// click event
 				tabBar.children("li").children("a").unbind("click").click(function(e){ 
 					if(!$(this).hasClass("use-link")){
 						e.preventDefault();
 						injeinc.tabReset($(this));
 						$(this).parent().parent().siblings(".tab-page").eq($(this).parent().index()).addClass("active");
 						$(this).parent().addClass("active");
-					}//keydown event
+					}
 				}).keydown(function(e){
 					if($(this).parent().hasClass("active") && e.keyCode == 9){
 						var focusItem = injeinc.findFocusItem($(this).parents(".tab-bar").eq(0).siblings(".tab-page.active"));
@@ -213,7 +222,7 @@ var injeinc = {
 		});
 		$(".tab-page").each(function(){
 			if(!$(this).parent(".tab-content").hasClass("not-used")){
-				var focusItem = injeinc.findFocusItem($(this)); //탭페이지 포커스 이동
+				var focusItem = injeinc.findFocusItem($(this)); 
 				if(focusItem.length > 0){
 					focusItem.last().unbind("keydown").keydown(function(e){
 						var inTabPage = $(this).parents(".tab-page").eq(0);
@@ -350,16 +359,17 @@ var injeinc = {
 		});
 	},
 	'modalOpen':function(id){
-		// $(window).scrollTop(0);
 		$("#overlay").show();
 		$(id).addClass("active");
 		$(id).find(".modal-close").eq(0).focus();
+		$('html, body').css('overflow','hidden')
 	},
 	'modalClose':function(){
 		var modalId = $(".modal-wrap.active").attr("id");
 		$(".modal-wrap").removeClass("active");
 		$("#overlay").hide();
 		$("a.modal-open[href='#"+modalId+"']").focus();
+		$('html, body').css('overflow','visible')
 	},
 	'findFocusItem':function(area){
 		return area.find("input, select, textarea, button, a");

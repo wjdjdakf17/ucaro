@@ -48,12 +48,13 @@
                 <p>(051) 923-0055</p>
               </div>
             </div>
-            <a href="" class="btn red">문의하기</a>
+            <a href="tel:051-923-0055" class="btn red">문의하기</a>
           </div>
         </div>
       </nav>
     </div>
   </header>
+  <!-- pc , mobile 이미지 구분 -->
   <section id="sec-1">
     <h2 class="blind">메인비쥬얼</h2>
     <div class="swiper main">
@@ -140,7 +141,10 @@
             </div>
             <strong class="price">23,700<span>만원</span></strong>
           </a>
-          <img class="car-status" src="/images/main/badge_blue.png" alt="차량상태">
+          <div class="car-status">
+            <img src="images/main/badge_status_off_1.png" alt="">
+            <img src="images/main/badge_status_on_1.png" alt="">
+          </div>
         </div>
         <div class="swiper-slide">
           <a href="">
@@ -156,7 +160,10 @@
             </div>
             <strong class="price">23,700<span>만원</span></strong>
           </a>
-          <img class="car-status" src="/images/main/badge_normal.png" alt="차량상태">
+          <div class="car-status">
+            <img src="images/main/badge_status_off_2.png" alt="">
+            <img src="images/main/badge_status_on_2.png" alt="">
+          </div>
         </div>
         <div class="swiper-slide">
           <a href="">
@@ -172,7 +179,10 @@
             </div>
             <strong class="price">23,700<span>만원</span></strong>
           </a>
-          <img class="car-status" src="/images/main/badge_normal.png" alt="차량상태">
+          <div class="car-status">
+            <img src="images/main/badge_status_off_3.png" alt="">
+            <img src="images/main/badge_status_on_3.png" alt="">
+          </div>
         </div>
         <div class="swiper-slide">
           <a href="">
@@ -188,7 +198,10 @@
             </div>
             <strong class="price">23,700<span>만원</span></strong>
           </a>
-          <img class="car-status" src="/images/main/badge_normal.png" alt="차량상태">
+          <div class="car-status">
+            <img src="images/main/badge_status_off_4.png" alt="">
+            <img src="images/main/badge_status_on_4.png" alt="">
+          </div>
         </div>
       </div>
       <div class="swiper-button-prev"></div>
@@ -203,18 +216,28 @@
               <div>
                 <a href="#">
                   <strong class="name">A6 40 TDI quattro premium</strong>
-                  <p class="year">2020년식</p>
-                  <p class="price">5800<span>만원</span></p>
+                  <ul class="year">
+                    <li>2020년식</li>
+                    <li>13.112km</li>
+                  </ul>
+                  <ul class="list-con dot">
+                    <li>연료 : 경유</li>
+                    <li>실내색상 : 블랙</li>
+                  </ul>
+                  <p class="price"><span class="num">5,800</span><span>만원</span></p>
                 </a>
               </div>
             </div>
             <div class="right">
-              <ul>
-                <li class="item1">인증점검</li>
-                <li class="item2">26.628km</li>
-                <li class="item3">사고무</li>
-                <li class="item4">디젤</li>
-                <li class="item5">판매중</li>
+              <ul class="info-list">
+                <li class="no-accident">완전 무사고</li>
+                <li class="new-car">신차급 매물</li>
+                <li class="diesel">경유(디젤)</li>
+                <li class="car-black">블랙</li>
+              </ul>
+              <ul class="frame-type">
+                <li><img src="/images/main/badge_status_off_1.png" alt="차량상태"></li>
+                <li><img src="/images/main/badge_status_off_2.png" alt="차량상태"></li>
               </ul>
             </div>
           </li>
@@ -224,18 +247,59 @@
               <div>
                 <a href="#">
                   <strong class="name">A6 40 TDI quattro premium</strong>
-                  <p class="year">2020년식</p>
-                  <p class="price">5800<span>만원</span></p>
+                  <ul class="year">
+                    <li>2020년식</li>
+                    <li>13.112km</li>
+                  </ul>
+                  <ul class="list-con dot">
+                    <li>연료 : 경유</li>
+                    <li>실내색상 : 블랙</li>
+                  </ul>
+                  <p class="price"><span class="num">5,800</span><span>만원</span></p>
                 </a>
               </div>
             </div>
             <div class="right">
-              <ul>
-                <li class="item1">인증점검</li>
-                <li class="item2">26.628km</li>
-                <li class="item3">사고무</li>
-                <li class="item4">디젤</li>
-                <li class="item5">판매중</li>
+              <ul class="info-list">
+                <li class="no-accident">완전 무사고</li>
+                <li class="new-car">신차급 매물</li>
+                <li class="gasoline">가솔린</li>
+                <li class="car-red">레드</li>
+              </ul>
+              <ul class="frame-type">
+                <li><img src="/images/main/badge_status_off_1.png" alt="차량상태"></li>
+                <li><img src="/images/main/badge_status_off_2.png" alt="차량상태"></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="left">
+              <img src="images/main/info_img.png" alt="차량">
+              <div>
+                <a href="#">
+                  <strong class="name">A6 40 TDI quattro premium</strong>
+                  <ul class="year">
+                    <li>2020년식</li>
+                    <li>13.112km</li>
+                  </ul>
+                  <ul class="list-con dot">
+                    <li>연료 : 경유</li>
+                    <li>실내색상 : 블랙</li>
+                  </ul>
+                  <p class="price"><span class="num">5,800</span><span>만원</span></p>
+                </a>
+              </div>
+            </div>
+            <div class="right">
+              <ul class="info-list">
+                <li class="no-accident">완전 무사고</li>
+                <li class="new-car">신차급 매물</li>
+                <li class="electricity">전기</li>
+                <li class="car-blue">블루</li>
+              </ul>
+              <ul class="frame-type">
+                <li><img src="/images/main/badge_status_off_1.png" alt="차량상태"></li>
+                <li><img src="/images/main/badge_status_off_2.png" alt="차량상태"></li>
               </ul>
             </div>
           </li>
@@ -266,10 +330,10 @@
                 <img src="images/main/location1.png" alt="남천전시장">
                 <div class="showroom-info">
                   <strong class="name"><span>Audi</span> Namcheon</strong>
-                  <p class="detail-name">부산 남천 전시장</p>
+                  <p class="detail-name">울산 남천 전시장</p>
                   <ul>
-                    <li class="address">주소 : 부산광역시 수영구 황령대로 501</li>
-                    <li class="call">대표전화 : 051-611-3844 / 팩스 : 051-611-3740</li>
+                    <li class="address">주소 : 울산광역시 남구 정동로 127</li>
+                    <li class="call">대표전화 : 052-227-2255 / 팩스 : 052-227-2255</li>
                     <li class="time">영업시간 : 09:00 ~ 20:00(연중무휴)</li>
                   </ul>
                   <a href="">전시장 안내</a>
@@ -290,14 +354,13 @@
                           </p>
                           <strong class="name">김병철 팀장</strong>
                           <ul>
-                            <li class="mobile">Mobile : 010 - 2877 - 2323</li>
+                            <li class="mobile">Mobile : 010 - 2877 - 2323<a class="tel" href="tel:010-0000-0000">전화걸기</a></li>
                             <li class="email">E-mail : v6quattro@naver.com</li>
                           </ul>
                         </div>
                       </div>
                       <div class="ad-bottom">
-                        <a href="#">견적/상담신청</a>
-                        <a href="#">SMS문의</a>
+                        <a href="#consulting" class="modal-open">상담 신청</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -310,14 +373,13 @@
                           </p>
                           <strong class="name">김병철 팀장</strong>
                           <ul>
-                            <li class="mobile">Mobile : 010 - 2877 - 2323</li>
+                            <li class="mobile">Mobile : 010 - 2877 - 2323<a class="tel" href="tel:010-0000-0000">전화걸기</a></li>
                             <li class="email">E-mail : v6quattro@naver.com</li>
                           </ul>
                         </div>
                       </div>
                       <div class="ad-bottom">
-                        <a href="#">견적/상담신청</a>
-                        <a href="#">SMS문의</a>
+                        <a href="#consulting" class="modal-open">상담 신청</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -330,14 +392,13 @@
                           </p>
                           <strong class="name">김병철 팀장</strong>
                           <ul>
-                            <li class="mobile">Mobile : 010 - 2877 - 2323</li>
+                            <li class="mobile">Mobile : 010 - 2877 - 2323<a class="tel" href="tel:010-0000-0000">전화걸기</a></li>
                             <li class="email">E-mail : v6quattro@naver.com</li>
                           </ul>
                         </div>
                       </div>
                       <div class="ad-bottom">
-                        <a href="#">견적/상담신청</a>
-                        <a href="#">SMS문의</a>
+                        <a href="#consulting" class="modal-open">상담 신청</a>
                       </div>
                     </div>
                   </div>
@@ -377,14 +438,13 @@
                           </p>
                           <strong class="name">김병철 팀장</strong>
                           <ul>
-                            <li class="mobile">Mobile : 010 - 2877 - 2323</li>
+                            <li class="mobile">Mobile : 010 - 2877 - 2323<a class="tel" href="tel:010-0000-0000">전화걸기</a></li>
                             <li class="email">E-mail : v6quattro@naver.com</li>
                           </ul>
                         </div>
                       </div>
                       <div class="ad-bottom">
-                        <a href="#">견적/상담신청</a>
-                        <a href="#">SMS문의</a>
+                        <a href="#consulting" class="modal-open">상담 신청</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -397,14 +457,13 @@
                           </p>
                           <strong class="name">김병철 팀장</strong>
                           <ul>
-                            <li class="mobile">Mobile : 010 - 2877 - 2323</li>
+                            <li class="mobile">Mobile : 010 - 2877 - 2323<a class="tel" href="tel:010-0000-0000">전화걸기</a></li>
                             <li class="email">E-mail : v6quattro@naver.com</li>
                           </ul>
                         </div>
                       </div>
                       <div class="ad-bottom">
-                        <a href="#">견적/상담신청</a>
-                        <a href="#">SMS문의</a>
+                        <a href="#consulting" class="modal-open">상담 신청</a>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -417,20 +476,51 @@
                           </p>
                           <strong class="name">김병철 팀장</strong>
                           <ul>
-                            <li class="mobile">Mobile : 010 - 2877 - 2323</li>
+                            <li class="mobile">Mobile : 010 - 2877 - 2323<a class="tel" href="tel:010-0000-0000">전화걸기</a></li>
                             <li class="email">E-mail : v6quattro@naver.com</li>
                           </ul>
                         </div>
                       </div>
                       <div class="ad-bottom">
-                        <a href="#">견적/상담신청</a>
-                        <a href="#">SMS문의</a>
+                        <a href="#consulting" class="modal-open">상담 신청</a>
                       </div>
                     </div>
                   </div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal -->
+          <div class="modal-wrap scroll" id="consulting">
+            <a href="" class="btn_modalClose">닫기</a>
+            <div>
+              <h4>상담 신청</h4>
+              <ul class="selc col1">
+                <li class="mgb20"><input type="text" placeholder="이름" title="이름"></li>
+                <li class="mgb20"><input type="text" placeholder="휴대폰" title="휴대폰"></li>
+                <div class="radio-box-wrap col3">
+                  <div>
+                    <input type="radio" id="kakao" name="consulting">
+                    <label class="radio" for="kakao"><img src="images/sub/white-check.png" alt="체크">카톡상담신청</label>                  
+                  </div>
+                  <div>
+                    <input type="radio" id="call" name="consulting">
+                    <label class="radio" for="call"><img src="images/sub/white-check.png" alt="체크">전화상담신청</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="message" name="consulting">
+                    <label class="radio" for="message"><img src="images/sub/white-check.png" alt="체크">문자상담신청</label>
+                  </div>
+                </div>
+                <li class="mgb20"><textarea name="" id="" cols="30" rows="10" style="width:100%" placeholder="상담내용을 입력하시면, 빠른 상담이 가능합니다."></textarea></li>
+                <li><p class="scroll">개인정보보호정책<br><br>•	'세양물류(주)중고차사업부'는 (이하 '회사'라 합니다.) 이용자의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호 등에 관한 법률" 등 개인정보와 관련된 법령상의 개인</p></li>
+              </ul>
+              <input type="checkbox" id="chk1">
+              <label for="chk1" class="check">위 약관에 동의합니다.</label>
+              <div class="btn-wrap center">
+                <a href="" class="bg-red">문의하기</a>
               </div>
             </div>
           </div>
@@ -445,8 +535,9 @@
     <div class="quick-consulting">
       <p>대표전화 </p>
       <span class="red-color"><span>(051)</span> <br>923-0055</span>
-      <a href="#">문의하기</a>
+      <a href="tel:051-923-0055">문의하기</a>
     </div>
+    <div id="overlay"></div>
   </footer>
 </body>
 </html>

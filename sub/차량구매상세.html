@@ -48,7 +48,7 @@
                 <p>(051) 923-0055</p>
               </div>
             </div>
-            <a href="" class="btn red">문의하기</a>
+            <a href="tel:051-923-0055" class="btn red">문의하기</a>
           </div>
         </div>
       </nav>
@@ -110,39 +110,69 @@
       <div class="middle">
         <ul class="check-list">
           <li class="check-info">
-            <img src="/images/sub/bage_info.png" alt="상태">
-            <strong>완전 무사고</strong>
-            <div>
+            <div class="check-top">
+              <img src="/images/sub/bage1.png" alt="101check">
               <strong>101 Check</strong>
-              <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
-              <button class="check-close">닫기</button>
+              <div>
+                <strong>101 Check</strong>
+                <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
+                <button class="check-close">닫기</button>
+              </div>
             </div>
           </li>
           <li class="check-info">
-            <img src="/images/sub/bage_info.png" alt="상태">
-            <strong>완전 무사고</strong>
-            <div>
-              <strong>101 Check</strong>
-              <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
-              <button class="check-close">닫기</button>
+            <div class="check-top">
+              <img src="/images/sub/bage2.png" alt="완전 무사고">
+              <strong>완전 무사고</strong>
+              <div>
+                <strong>101 Check</strong>
+                <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
+                <button class="check-close">닫기</button>
+              </div>
             </div>
           </li>
           <li class="check-info">
-            <img src="/images/sub/bage_info.png" alt="상태">
-            <strong>완전 무사고</strong>
-            <div>
-              <strong>101 Check</strong>
-              <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
-              <button class="check-close">닫기</button>
+            <div class="check-top">
+              <img src="/images/sub/bage3.png" alt="신차 급 주행거리">
+              <strong>신차 급 주행거리</strong>
+              <div>
+                <strong>101 Check</strong>
+                <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
+                <button class="check-close">닫기</button>
+              </div>
             </div>
           </li>
           <li class="check-info">
-            <img src="/images/sub/bage_info.png" alt="상태">
-            <strong>완전 무사고</strong>
-            <div>
-              <strong>101 Check</strong>
-              <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
-              <button class="check-close">닫기</button>
+            <div class="check-top">
+              <img src="/images/sub/bage4.png" alt="품질보증 서비스">
+              <strong>품질보증 서비스</strong>
+              <div>
+                <strong>101 Check</strong>
+                <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
+                <button class="check-close">닫기</button>
+              </div>
+            </div>
+          </li>
+          <li class="check-info">
+            <div class="check-top">
+              <img src="/images/sub/bage5.png" alt="리스 변행승계">
+              <strong>리스 변행승계</strong>
+              <div>
+                <strong>101 Check</strong>
+                <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
+                <button class="check-close">닫기</button>
+              </div>
+            </div>
+          </li>
+          <li class="check-info">
+            <div class="check-top">
+              <img src="/images/sub/bage6.png" alt="이전등록비(취등록세) 면제">
+              <strong>이전등록비(취등록세) 면제</strong>
+              <div>
+                <strong>101 Check</strong>
+                <p>아우디의 101가지 <br>상세 점검을 통해 <br>성능이 보장된 <br>매물입니다.</p>
+                <button class="check-close">닫기</button>
+              </div>
             </div>
           </li>
         </ul>
@@ -151,12 +181,11 @@
         <div class="left">
           <h4>차량정보</h4>
           <div class="detail-info">
-            <ul class="d-top">
-              <li class="item1">인증점검</li>
-              <li class="item2">26.628km</li>
-              <li class="item3">사고무</li>
-              <li class="item4">디젤</li>
-              <li class="item5">판매중</li>
+            <ul class="info-list d-top">
+              <li class="no-accident">완전 무사고</li>
+                  <li class="new-car">신차급 매물</li>
+                  <li class="diesel">경유(디젤)</li>
+                  <li class="car-white">화이트</li>
             </ul>
             <ul class="d-bottom">
               <li>
@@ -216,7 +245,21 @@
             <form action="">
               <input type="text" title="이름" class="name" placeholder="이름">
               <input type="text" title="휴대폰" class="phone" placeholder="휴대폰">
-              <input type="text" title="이메일" class="email"placeholder="이메일">
+
+              <div class="radio-box-wrap col3">
+                <div>
+                  <input type="radio" id="kakao" name="consulting">
+                  <label class="radio" for="kakao"><img src="/images/sub/white-check.png" alt="체크">카톡상담신청</label>                  
+                </div>
+                <div>
+                  <input type="radio" id="call" name="consulting">
+                  <label class="radio" for="call"><img src="/images/sub/white-check.png" alt="체크">전화상담신청</label>
+                </div>
+                <div>
+                  <input type="radio" id="message" name="consulting">
+                  <label class="radio" for="message"><img src="/images/sub/white-check.png" alt="체크">문자상담신청</label>
+                </div>
+              </div>
               <textarea name="" id="" cols="30" rows="10" placeholder="본 차량에 관하여 궁금하신 내용을 입력하시면,      빠른 상담이 가능합니다."></textarea>
               <p class="rule scroll">
                 개인정보보호정책
@@ -229,9 +272,12 @@
           </div>  
         </div>
       </div>
-      <div class="btn-wrap center">
+      <div class="btn-wrap center reverse">
         <a href="" class="bg-none">목록보기</a>
-        <a href="" class="bg-red">문의하기</a>
+        <div>
+          <a href="" class="bg-red">상담 신청</a>
+          <a href="tel:010-0000-0000" class="bg-gray only-mobile">전화 연결하기</a>
+        </div>
       </div>
     </div>
     
@@ -243,7 +289,7 @@
     <div class="quick-consulting">
       <p>대표전화</p>
       <span class="red-color"><span>(051)</span> <br>923-0055</span>
-      <a href="#">문의하기</a>
+      <a href="tel:051-923-0055">문의하기</a>
     </div>
   </footer>
 </body>

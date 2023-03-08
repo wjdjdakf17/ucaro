@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>ucaro_app</title>
+<style>
+html{scroll-behavior: smooth;}
+html, body{margin:0; padding:0; -webkit-text-size-adjust:none; -webkit-font-smoothing:antialiased; word-wrap:normal; word-break:keep-all; }
+html, body, input, textarea, select, table, button, a{font-family:'malgun gothic', dotum, sans-serif; font-size:13px; color:#555;}
+img{margin:0; padding:0; border:none; vertical-align:top;}
+a{text-decoration: none;}
+a:hover{text-decoration:none;}
+ul{list-style:none; margin:0; padding:0;}
+ol{margin:0 0 0 -20px;}
+dl,dt,dd{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{clear:both;margin:0;padding:0; font-weight:600;}
+em{font-style:normal; font-weight:normal;}
+small{font-style:normal;}
+p{margin:0; padding:0;}
+strong, b{font-weight:700;}
+iframe{margin:0;padding:0;border:none;}
+hr{display:none;}
+table{border-spacing:0; border-collapse:collapse;}
+table caption{width:0; height:0; overflow:hidden;}
+table,th,td{margin:0; padding:0; border:none;}
+th{font-weight:500;}
+.page-header{position:fixed;left:0;top:0;bottom:0;width:250px; background-color:#111; color:#fff; box-sizing:border-box;}
+.page-header .header-top{padding:20px; border-bottom:1px solid #A6937C;}
+.page-header .logo{height:40px; margin-bottom:20px;}
+.page-header .logo h1{height:100%;}
+.page-header .logo img{height:100%;}
+.page-header .pj-title{}
+.page-header .pj-title span{display:block;}
+.page-header .pj-title .lb{font-size:13px;color:#A6937C; margin-bottom:3px;}
+.page-header .pj-title .name{font-size:16px;color:#fff; line-height:1.25em; font-weight:600;}
+.page-nav .dep1 > li{border-bottom:1px solid rgba(255,255,255,0.1);}
+.page-nav .dep1 > li > a{display:block;font-size:14px; padding:10px 20px; color:#A6937C;}
+.page-nav .dep1 > li > a:hover{color:#fff;}
+.page-container{margin-left:250px;}
+.page-title{border-bottom:1px solid #dedede; height:50px; display:flex; align-items:center; padding:0 20px;}
+.page-title h2{font-size:16px;}
+.page-title .links{margin-left:auto; display:flex; align-items:center; }
+.page-contents{padding:20px; box-sizing:border-box;}
+.sec-wrap{margin-bottom:30px;}
+.sec-wrap.hide{display:none;}
+.sec-title{font-size:18px; font-weight:bold; color:#000; margin-bottom:5px;}
+.list-table table{width:100%; table-layout:fixed;}
+.list-table table th{padding:3px 5px;text-align:left;font-size:12px;font-weight:600; background-color:#f8f8f8;color:#333; border:1px solid #dedede;}
+.list-table table td{padding:5px;text-align:left; border:1px solid #dedede;}
+.list-table a{text-decoration:underline; color:#0074cf;}
+.list-table .mb-ok td{background-color:#eee;}
+.type-lb{display:inline-flex; align-items:center; height:20px;padding:0 5px; border-radius:2px; margin-left:5px;}
+.type-lb.out{background-color:#333;color:#fff; font-size:12px;}
+.txt-red{ color:red !important; }
+</style>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".page-nav a").on("click",function(){
+    var target = $(this).attr("href");
+
+    if($(this).hasClass("total")){
+      $(".sec-wrap").removeClass("hide");
+    }else{
+      $(".sec-wrap").addClass("hide");
+      $(target).removeClass("hide");
+    }
+  });
+});
+</script>
+</head>
+<body>
+<div id="pageWrap">
+  <div class="page-header">
+    <div class="header-top">
+      <div class="pj-title">
+        <span class="lb">Project</span>
+        <span class="name">ucaro_app 구축 사업</span>
+      </div>
+    </div>
+    <div class="page-nav">
+      <nav>
+        <ul class="dep1">
+          <li><a href="#" class="total">전체</a></li>
+          <li><a href="#sec1">차량 구매</a></li>
+          <li><a href="#sec2">내차 팔기</a></li>
+          <li><a href="#sec3">뉴스 & 이벤트</a></li>
+          <li><a href="#sec4">유카로오토모빌 AAP Program</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="page-container">
+    <div class="page-title">
+      <h2>Page list</h2>
+    </div>
+    <div class="page-contents">
+      <!-- 내용시작 -->
+      <div class="sec-wrap" id="sec0">
+        <div class="sec-title">메인페이지</div>
+        <div class="list-table">
+          <table>
+            <colgroup>
+              <col style="width:50px">
+              <col style="width:120px">
+              <col>
+              <col style="width:80px">
+              <col style="width:100px">
+              <col style="width:300px">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>화면ID</th>
+                <th>파일</th>
+                <th>반응형</th>
+                <th>접근성</th>
+                <th>메모</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="mb-ok">
+                <td>1</td>
+                <td></td>
+                <td><a href="index.html" target="_blank">메인페이지</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sec-wrap" id="sec1">
+        <div class="sec-title">차량 구매</div>
+        <div class="list-table">
+          <table>
+            <colgroup>
+              <col style="width:50px">
+              <col style="width:120px">
+              <col>
+              <col style="width:80px">
+              <col style="width:100px">
+              <col style="width:300px">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>화면ID</th>
+                <th>파일</th>
+                <th>반응형</th>
+                <th>접근성</th>
+                <th>메모</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="mb-ok">
+                <td>1</td>
+                <td></td>
+                <td><a href="sub/차량구매리스트.html" target="_blank">차량구매 리스트</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="mb-ok">
+                <td>2</td>
+                <td></td>
+                <td><a href="sub/차량구매상세.html" target="_blank">차량구매 상세</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sec-wrap" id="sec2">
+        <div class="sec-title">내차 팔기</div>
+        <div class="list-table">
+          <table>
+            <colgroup>
+              <col style="width:50px">
+              <col style="width:120px">
+              <col>
+              <col style="width:80px">
+              <col style="width:100px">
+              <col style="width:300px">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>화면ID</th>
+                <th>파일</th>
+                <th>반응형</th>
+                <th>접근성</th>
+                <th>메모</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="mb-ok">
+                <td>1</td>
+                <td></td>
+                <td><a href="sub/내차팔기.html" target="_blank">내차 팔기</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sec-wrap" id="sec3">
+        <div class="sec-title">뉴스 & 이벤트</div>
+        <div class="list-table">
+          <table>
+            <colgroup>
+              <col style="width:50px">
+              <col style="width:120px">
+              <col>
+              <col style="width:80px">
+              <col style="width:100px">
+              <col style="width:300px">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>화면ID</th>
+                <th>파일</th>
+                <th>반응형</th>
+                <th>접근성</th>
+                <th>메모</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="mb-ok">
+                <td>1</td>
+                <td></td>
+                <td><a href="sub/뉴스이벤트.html" target="_blank">뉴스이벤트</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="mb-ok">
+                <td>2</td>
+                <td></td>
+                <td><a href="sub/뉴스_상세.html" target="_blank">뉴스_상세</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="mb-ok">
+                <td>3</td>
+                <td></td>
+                <td><a href="sub/이벤트_상세.html" target="_blank">이벤트_상세</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sec-wrap" id="sec4">
+        <div class="sec-title">유카로오토모빌 AAP Program</div>
+        <div class="list-table">
+          <table>
+            <colgroup>
+              <col style="width:50px">
+              <col style="width:120px">
+              <col>
+              <col style="width:80px">
+              <col style="width:100px">
+              <col style="width:300px">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>화면ID</th>
+                <th>파일</th>
+                <th>반응형</th>
+                <th>접근성</th>
+                <th>메모</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="mb-ok">
+                <td>1</td>
+                <td></td>
+                <td><a href="sub/APP_Program_유카로오토모빌.html" target="_blank">유카로오토모빌</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="mb-ok">
+                <td>2</td>
+                <td></td>
+                <td><a href="sub/APP_Program_네트워크_전시장소개_부산.html" target="_blank">APP_Program_네트워크_전시장소개_부산</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="mb-ok">
+                <td>3</td>
+                <td></td>
+                <td><a href="sub/APP_Program_네트워크_전시장소개_울산.html" target="_blank">APP_Program_네트워크_전시장소개_울산</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="mb-ok">
+                <td>4</td>
+                <td></td>
+                <td><a href="sub/APP_Program_네트워크_딜러소개.html" target="_blank">APP_Program_네트워크_딜러소개</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="mb-ok">
+                <td>5</td>
+                <td></td>
+                <td><a href="sub/APP_Program.html" target="_blank">APP_Program</a></td>
+                <td>o</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- 내용끝 -->
+    </div>
+  </div>
+</div><!-- //wrap -->
+
+</body>
+</html>

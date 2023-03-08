@@ -48,14 +48,14 @@
                 <p>(051) 923-0055</p>
               </div>
             </div>
-            <a href="" class="btn red">문의하기</a>
+            <a href="tel:051-923-0055" class="btn red">문의하기</a>
           </div>
         </div>
       </nav>
     </div>
   </header>
   <div id="container">
-    <div class="location type3">
+    <div class="location type2">
       <div class="inner">
         <strong class="title">내차 팔기</strong>
       </div>
@@ -88,131 +88,167 @@
         <li><img src="/images/sub/step_icon_05.png" alt="">차량대금송금</li>
         <li><img src="/images/sub/step_icon_06.png" alt="">명의이전완료</li>
       </ul>
-      <div class="car-select-wrap">
-        <h4>차종선택</h4>
-        <div class="select-detail">
+      <div class=" line-wrap">
+        <h4>정보 입력 <span class="required">＊ 필수 입력사항입니다.</span></h4>
+        <div class="h4Content">
           <form action="">
-            <ul>
-              <li><input type="checkbox" id="a1" checked><label class="check active" for="a1">A1</label></li>
-              <li><input type="checkbox" id="a3"><label class="check" for="a3">A3</label></li>
-              <li><input type="checkbox" id="a4"><label class="check" for="a4">A4</label></li>
-              <li><input type="checkbox" id="a5"><label class="check" for="a5">A5</label></li>
-              <li><input type="checkbox" id="a6"><label class="check" for="a6">A6</label></li>
-              <li><input type="checkbox" id="a7"><label class="check" for="a7">A7</label></li>
-              <li><input type="checkbox" id="q2"><label class="check" for="q2">Q2</label></li>
-              <li><input type="checkbox" id="q3"><label class="check" for="q3">Q3</label></li>
-              <li><input type="checkbox" id="q5"><label class="check" for="q5">Q5</label></li>
-              <li><input type="checkbox" id="q7"><label class="check" for="q7">Q7</label></li>
-              <li><input type="checkbox" id="q8"><label class="check" for="q8">Q8</label></li>
-              <li><input type="checkbox" id="r8"><label class="check" for="r8">R8</label></li>
-              <li><input type="checkbox" id="e-tron"><label class="check" for="e-tron">e-tron</label></li>
-              <li><input type="checkbox" id="s-model"><label class="check" for="s-model">S model</label></li>
-              <li><input type="checkbox" id="rs-model"><label class="check" for="rs-model">RS model</label></li>
-              <li><input type="checkbox" id="volkswagen"><label class="check" for="volkswagen">Volkswagen</label></li>
-            </ul>
+            <div class="table-box">
+              <table>
+                <caption>정보입력</caption>
+                <colgroup>
+                  <col style="width:15%">
+                  <col>
+                  <col style="width:15%">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>차종 <span class="required">＊</span></th>
+                    <td colspan="3">
+                      <input type="text" placeholder="차종을 입력해주세요.">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>차량 번호 <span class="required">＊</span></th>
+                    <td colspan="3"><input type="text" placeholder="차량 번호를 입력해 주세요. “예시 00가 0000”"></td>
+                  </tr>
+                  <tr>
+                    <th>주행 거리 <span class="required">＊</span></th>
+                    <td>
+                      <select name="" id="">
+                        <option value="선택하세요">선택하세요</option>
+                        <option value="value">value</option>
+                      </select>
+                    </td>
+                    <th>사고 유무 <span class="required">＊</span></th>
+                    <td>
+                      <div class="radio-box-wrap col2">
+                        <div>
+                          <input type="radio" id="kakao" name="accident">
+                          <label class="radio" for="kakao"><img src="/images/sub/white-check.png" alt="체크">유</label>                  
+                        </div>
+                        <div>
+                          <input type="radio" id="call" name="accident">
+                          <label class="radio" for="call"><img src="/images/sub/white-check.png" alt="체크">무</label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>세부 등급</th>
+                    <td>
+                      <input type="text" placeholder="세부 등급을 입력해 주세요.">
+                    </td>
+                    <th>연식</th>
+                    <td>
+                      <select name="" id="">
+                        <option value="선택하세요">선택하세요</option>
+                        <option value="value">value</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>금융상태</th>
+                    <td>
+                      <select name="" id="">
+                        <option value="선택하세요">선택하세요</option>
+                        <option value="value">value</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </form>
         </div>
-        <h4>차량 세부정보</h4>
-        <div class="select-detail2">
-          <ul class="selc col4">
-            <li>
-              <select name="" id="">
-                <option value="val1">val1</option>
-              </select>
-            </li>
-            <li>
-              <select name="" id="">
-                <option value="val1">val1</option>
-              </select>
-            </li>
-            <li>
-              <select name="" id="">
-                <option value="val1">val1</option>
-              </select>
-            </li>
-            <li>
-              <select name="" id="">
-                <option value="val1">val1</option>
-              </select>
-            </li>
-          </ul>
-          <ul class="selc col4">
-            <li>
-              <select name="" id="">
-                <option value="val1">val1</option>
-              </select>
-            </li>
-            <li>
-              <select name="" id="">
-                <option value="val1">val1</option>
-              </select>
-            </li>
-            <li class="space">~</li>
-            <li>
-              <select name="" id="">
-                <option value="val1">val1</option>
-              </select>
-            </li>
-            <li>
-              <select name="" id="">
-                <option value="val1">val1</option>
-              </select>
-            </li>
-          </ul>
-        </div>
-        <div class="select-price">
-          <h4 class="has-sub">차량가격<span>※ 정확한 개인정보를 입력해 주셔야 명확한 상담이 가능합니다. 연락 받으실 수 있는 정보를 입력해 주세요.</span></h4>
-          <ul class="selc col2">
-            <li>
-              <input type="text" placeholder="금액 입력을 해주세요.">
-              <span class="price">만원 이상</span>
-            </li>
-            <li class="space">~</li>
-            <li>
-              <input type="text" placeholder="금액 입력을 해주세요.">
-              <span class="price">만원 이상</span>
-            </li>
-          </ul>
+      </div>
+      <div class="line-wrap">
+        <h4>개인정보 <span class="required">＊ 필수 입력사항입니다.</span></h4>
+        <div class="h4Content">
+          <form action="">
+            <div class="table-box">
+              <table>
+                <caption>개인정보</caption>
+                <colgroup>
+                  <col style="width:15%">
+                  <col>
+                  <col style="width:15%">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>이름 <span class="required">＊</span></th>
+                    <td colspan="">
+                      <input type="text" placeholder="이름을 입력해 주세요.">
+                    </td>
+                    <th>연락처 <span class="required">＊</span></th>
+                    <td colspan="">
+                      <input type="text" placeholder="연락처를 입력해 주세요.">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>거주 지역 <span class="required">＊</span></th>
+                    <td>
+                      <select name="" id="">
+                        <option value="선택하세요">선택하세요</option>
+                        <option value="value">value</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">
+                      <textarea name="" id="" cols="30" rows="10" style="width: 100%;" placeholder="기타 문의 및 당부를 남겨주세요."></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">
+                      <p class="scroll">
+                        &lt;개인정보취급방침 및 개인정보수집목적&gt;
+
+                        <br><br>[수집하는 개인정보의 항목]
+                        <br>가. 유카로오토모빌㈜(이하 "회사")는 오프라인/온라인 회원가입 및 이벤트 응모, 각종 서비스 제공을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+                        <br>- 필수항목 : 성명 (법인경우 상호) 성별, 연락처(자택전화번호, 핸드폰번호), 이메일, 생년월일, 현재보유차종, 주소(우편물 수령주소, 법인경우 사업장 주소) 구매계획, 유입경로, 관심차종
+                        <br>나. 서비스 이용과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.
+                        <br>- IP Address, 쿠키, 방문 일시, 서비스 이용 기록, 불량 이용 기록
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">
+                      <input type="checkbox" id="chk1">
+                      <label for="chk1" class="check">위 약관에 동의합니다.</label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="car-select-wrap">
-        <h4>개인정보</h4>
-        <ul class="selc col2">
-          <li>
-            <input type="text" placeholder="이름">
-          </li>
-          <li>
-            <input type="text" placeholder="연락처">
-          </li>
-        </ul>
-        <ul class="selc col2">
-          <li>
-            <input type="text" placeholder="이메일">
-          </li>
-          <li>
-            <select name="" id="">
-              <option value="거주지역">거주지역</option>
-            </select>
-          </li>
-        </ul>
-        <ul class="selc col1">
-          <textarea name="" id="" cols="30" rows="10" placeholder="기타 문의 및 당부를 남겨주세요."></textarea>
-        </ul>
-        <ul class="selc col1">
-          <p class="scroll">
-            &lt;개인정보취급방침 및 개인정보수집목적&gt;
-
-          <br><br>[수집하는 개인정보의 항목]
-          <br>가. 유카로오토모빌㈜(이하 "회사")는 오프라인/온라인 회원가입 및 이벤트 응모, 각종 서비스 제공을 위해 아래와 같은 개인정보를 수집하고 있습니다.
-          <br>- 필수항목 : 성명 (법인경우 상호) 성별, 연락처(자택전화번호, 핸드폰번호), 이메일, 생년월일, 현재보유차종, 주소(우편물 수령주소, 법인경우 사업장 주소) 구매계획, 유입경로, 관심차종
-          <br>나. 서비스 이용과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.
-          <br>- IP Address, 쿠키, 방문 일시, 서비스 이용 기록, 불량 이용 기록
-          </p>
-        </ul>
-        <label for="chk1" class="check">위 약관에 동의합니다.</label>
+      <div class="line-wrap pdb0">
+        <h4>고객메모</h4>
+        <div class="h4Content">
+          <form action="">
+            <div class="table-box">
+              <table>
+                <caption>고객메모</caption>
+                <colgroup>
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="text" placeholder="차량 가격을 입력 해주세요.">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="btn-wrap center">
-        <a href="" class="bg-red">문의하기</a>
+        <a href="" class="bg-red">상담 신청</a>
       </div>
     </div>
     
@@ -224,7 +260,7 @@
     <div class="quick-consulting">
       <p>대표전화</p>
       <span class="red-color"><span>(051)</span> <br>923-0055</span>
-      <a href="#">문의하기</a>
+      <a href="tel:051-923-0055">문의하기</a>
     </div>
   </footer>
 </body>
